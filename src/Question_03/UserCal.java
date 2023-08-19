@@ -17,9 +17,17 @@ public class UserCal {
             int n = Integer.parseInt(input);
             String expression = scan.nextLine();
             Test test = new Test(n,expression);
+            double result = Cal.evalueteExpression(test.getExpression());
+
+            System.out.println("Test" + testNumber);
+            System.out.println(result);
+            System.out.println();
+
+            testNumber++;
 
 
         }
+        scan.close();
     }
 
 }
