@@ -11,7 +11,7 @@ state varchar(50) NOT null,
 country varchar(50) NOT null
 );
 
--- Criated a Person
+-- Criated Person
 Create table person(
 person_id SERIAL PRIMARY KEY,
 name varchar(100) not null,
