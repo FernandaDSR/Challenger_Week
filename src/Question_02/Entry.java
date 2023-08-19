@@ -11,8 +11,13 @@ public class Entry {
         String emotions = scan.nextLine();
         scan.close();
 
-        int funCount = exit.countEmotions(emotions, ":-)");
-        int upsetCount = exit.countEmotions(emotions, ":-(");
+        int funCount = Exit.countEmotions(emotions, ":-)");
+        int upsetCount = Exit.countEmotions(emotions, ":-(");
+
+        String feelings = Exit.determineFeeling(funCount, upsetCount);
+
+        System.out.println(feelings);
+
     }
 
 }
